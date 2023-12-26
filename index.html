@@ -9,8 +9,6 @@
 
 
 
-
-
 		<title>Usman Altaf Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +18,9 @@
 		<style>
 			body {font-family: Arial, Helvetica, sans-serif;}
 			
-
+			header.major {
+				font-style: normal;
+}
 
 			#myImg {
 			  border-radius: 5px;
@@ -107,6 +107,204 @@
 				width: 100%;
 			  }
 			}
+
+
+
+
+			.post.featured {
+				font-family: 'Times New Roman', serif; /* Change 'Times New Roman' to your desired font family */
+				font-style: normal;/* Add any other styles for the article here */
+        	}
+
+			.posts {
+				font-family: 'Times New Roman', serif; /* Change 'Verdana' to your desired font family */
+				/* Add any other styles for the posts section here */
+			}
+
+
+
+
+
+			div.scroll-container {
+				background-color: rgb(255, 254, 254);
+				overflow: auto;
+				white-space: nowrap;
+				padding: 10px;
+			}
+
+			div.scroll-container img {
+				padding: 10px;
+			}
+
+
+
+
+
+			/* Body Scrolling */
+
+			* {
+				box-sizing: border-box;
+			}
+
+			img {
+				vertical-align: middle;
+			}
+
+			/* Position the image container (needed to position the left and right arrows) */
+			.container1,
+			.container {
+				display: inline-block;
+				position: relative;
+				width: 100%;
+  				height: 50%;
+				
+			}
+
+			/* Hide the images by default */
+			.mySlides4,
+			.mySlides3,
+			.mySlides2,
+			.mySlides1 {
+				display: none;
+			}
+
+			/* Add a pointer when hovering over the thumbnail images */
+			.cursor {
+				cursor: pointer;
+			}
+
+			/* Next & previous buttons */
+			.prev,
+			.next {
+				cursor: pointer;
+				position: absolute;
+				top: 40%;
+				width: auto;
+				padding: 16px;
+				margin-top: -50px;
+				color: white;
+				font-weight: bold;
+				font-size: 20px;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+				-webkit-user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+
+			.prev {
+				left: 0;
+				border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover,
+			.next:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+				color: #f2f2f2;
+				font-size: 12px;
+				padding: 8px 12px;
+				position: absolute;
+				top: 0;
+			}
+
+			/* Container for image text */
+			.caption-container {
+				text-align: center;
+				background-color: #222;
+				padding: 2px 16px;
+				color: white;
+			}
+
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			/* Six columns side by side */
+			.column {
+				float: left;
+				width: 16.66%;
+			}
+
+			/* Add a transparency effect for thumnbail images */
+			.demo {
+				opacity: 0.6;
+			}
+
+			.active,
+			.demo:hover {
+				opacity: 1;
+			}
+
+
+			/* Auto Slide Show */
+
+			* {box-sizing: border-box;}
+			/* body {font-family: Verdana, sans-serif;} */
+			.mySlidesA {display: none;}
+			img {vertical-align: middle;}
+
+			/* Slideshow container */
+			.slideshow-container {
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+				height: auto;
+				overflow: hidden;
+			}
+
+			/* Caption text */
+			.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+			}
+
+
+			/* The dots/bullets/indicators */
+			.dot {
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+			}
+
+			.active {
+			background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+			animation-name: fade;
+			animation-duration: 1.5s;
+			}
+
+			@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+			}
+
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			.text {font-size: 11px}
+			}
 			</style>
 
 	</head>
@@ -119,7 +317,7 @@
 					<div id="intro">
 						<h1>Usman Altaf<br />
 						Portfolio</h1>
-						<p>Data Analyst | Power BI Developer | Python Developer | RPA Developer<br />
+						<p>Data Analyst | Power BI Developer | Python Developer | RPA Developer | Microsoft Applications | Excel VBA<br />
 							<a href="https://www.linkedin.com/in/usman-altaf-analyst">@usman-altaf-analyst</a>.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -145,22 +343,165 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
+				<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Huawei FSC<br />
-									centralized Portal</a></h2>
-									<p>I had developed the overall business intelligence ecosystem for Huawei Equipment Delivery process.<br />
-									This BI solution includes multiple Power BI dashboards that covers numerous domains of delivery operations.
-									All these dashboards were eventually linked with the centralized portal to make it easier for the end user 
-									to access all dashboards on a single platform.
-									<br /></p>
-								</header>
-								<a href="#" class="image main"><img src="images/FSC_Portal.png" alt="" /></a>
+					<!-- Featured Post -->
+						<article class="post featured">
+							<header class="major" >
+								<h2><a href="#">About Me <i class="fas fa-user icon-small"></i></a></h2>
+								<p>I am Usman, a professional data analyst passionate about working with organizations that want to make effective use of their data, from the first 
+									ideas around what you want to measure and how to capture data accurately, through data preparation, analysis and management, all the way to
+									the impactful presentation of insights. I can support each step of the process to enable your organization to make evidence-driven decisions
+									or share insights with new audiences. <br />
+									
+									With nearly 5 years in data analytics, I'm a Microsoft Certified Power BI Data Analyst adept in BI analysis, Tableau, Python, Power Automate, 
+									Power Apps, UI Path RPA, SQL, Snowflake, Excel VBA, and more. <br />
 
-							</article>
+									Having collaborated with esteemed multinational companies such as <b>Huawei, Zong 4G Pakistan, Fortescue Metal Group, Rio Tinto, Roy Hill, and 
+									Enco Group</b>, I bring a wealth of experience. Beyond analytics, my passion extends to steering Digital Transformation initiatives, contributing 
+									to organizational growth and innovation.
+								</p>
+							</header>
+							<div class="slideshow-container">
+
+								<div class="mySlides fade">
+									<div class="numbertext">1 / 3</div>
+									<img src="images/Header/4G_Dashboard.jpg" style="width:100%">
+									<div class="text">Zong 4G Dashboard</div>
+							 	</div>
+							
+								<div class="mySlides fade">
+									<div class="numbertext">2 / 10</div>
+									<img src="images/Header/RTIO Non Returned Tool SS1.png" style="width:100%">
+									<div class="text">Rio Tinto Non Returned Tool</div>
+								</div>
+								
+								<div class="mySlides fade">
+									<div class="numbertext">3 / 10</div>
+									<img src="images/Header/ATP_Dashboard.jpg" style="width:100%">
+									<div class="text">Huawei ATP Dashboard</div>
+								</div>
+									
+								<div class="mySlides fade">
+									<div class="numbertext">4 / 10</div>
+									<img src="images/Header/Notification Tracker SS2.png" style="width:100%">
+									<div class="text">Rio Tinto Notification Tracker</div>
+								</div>
+								
+								<div class="mySlides fade">
+									<div class="numbertext">5 / 10</div>
+									<img src="images/Header/QOS_Daily.jpg" style="width:100%">
+									<div class="text">Zong Quality Of Sales Dashboard</div>
+								</div>
+									
+								<div class="mySlides fade">
+									<div class="numbertext">6 / 10</div>
+									<img src="images/Header/RTIO Budget Dashboard SS1.png" style="width:100%">
+									<div class="text">Rio Tinto Budget Dashboard</div>
+								</div>
+
+								<div class="mySlides fade">
+									<div class="numbertext">7 / 10</div>
+									<img src="images/Header/Electricity Nomination1.png" style="width:100%">
+									<div class="text">Fortescue Electricity Nomination Dashboard</div>
+								</div>
+
+								<div class="mySlides fade">
+									<div class="numbertext">8 / 10</div>
+									<img src="images/Header/PY_Email_Receive.png" style="width:100%">
+									<div class="text">Py scripting</div>
+								</div>
+
+								<div class="mySlides fade">
+									<div class="numbertext">9 / 10</div>
+									<img src="images/Header/Power Automate Workflow.png" style="width:100%">
+									<div class="text">UI Path Automation Workflows</div>
+								</div> 
+								
+								<div class="mySlides fade">
+									<div class="numbertext">10 / 10</div>
+									<img src="images/Header/UIPath_Workflows.png" style="width:100%">
+									<div class="text">UI Path Automation Workflows</div>
+								</div>
+							</div>
+							  <br>
+
+								<div style="text-align:center">
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+									<span class="dot"></span> 
+								</div>				
+							
+							<script>
+
+							// -----------Auto Slide Show--------
+							
+								let slideIndex1 = 0;
+							showSlides1();
+
+							function showSlides1() {
+							let i;
+							let slides = document.getElementsByClassName("mySlides");
+							let dots = document.getElementsByClassName("dot");
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							}
+							slideIndex1++;
+								if (slideIndex1 > slides.length) {slideIndex1 = 1}    
+								for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex1-1].style.display = "block";  
+							dots[slideIndex1-1].className += " active";
+							setTimeout(showSlides1, 2000); // Change image every 2 seconds
+							}
+
+
+
+							// -----------Mannual Slide Show--------
+							let slideIndex = 1;
+							showSlides(slideIndex, "mySlides");
+							
+							function plusSlides(n, Class_Name) {
+							  showSlides(slideIndex += n, Class_Name);
+							}
+							
+							function currentSlide(n, Class_Name) {
+							  showSlides(slideIndex = n, Class_Name);
+							}
+							
+							function showSlides(n, ClassName) {
+							  let i;
+							  let slides = document.getElementsByClassName(ClassName);
+							  let dots = document.getElementsByClassName("demo");
+							  let captionText = document.getElementById("caption");
+							  if (n > slides.length) {slideIndex = 1}
+							  if (n < 1) {slideIndex = slides.length}
+							  for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";
+							  }
+							  for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							  }
+							  slides[slideIndex-1].style.display = "block";
+							  dots[slideIndex-1].className += " active";
+							  captionText.innerHTML = dots[slideIndex-1].alt;
+							}
+
+
+
+							</script>
+							
+						</article>
+				
+				
 							
 
 
@@ -172,21 +513,21 @@
 										<h2><a href="#">Acceptance Testing Dashboard<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img id="myImg" src="images/ATP_Dashboard.jpg"  alt="Acceptance Testing Dashboard"  onclick="openModal()" /></a>
+									<a href="#close" class="image fit"><img id="myImg" src="images/ATP_Dashboard.jpg"  alt="Acceptance Testing Dashboard"  onclick="openModal('myModal')" /></a>
 
 									<div id="myModal" class="modal">
-										<span class="close" onclick="closeModal()">&times;</span>
+										<span class="close" onclick="closeModal('myModal')">&times;</span>
 										<img class="modal-content" src="images/ATP_Dashboard.jpg">
 
 									</div>
 
 									<script>
-										function openModal() {
-										document.getElementById("myModal").style.display = "block";
+										function openModal(ModName) {
+										document.getElementById(ModName).style.display = "block";
 										}
 
-										function closeModal() {
-										document.getElementById("myModal").style.display = "none";
+										function closeModal(ModName) {
+										document.getElementById(ModName).style.display = "none";
 										}
 										var scrollPosition = window.scrollY;
 									</script>
@@ -204,22 +545,14 @@
 										<h2><a href="#">Daily Plan Dashboard<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img  src="images/Live_Dashboard.jpg" alt="Daily Plan Dashboard" onclick="openModal2()"/></a>
+									<a href="#close" class="image fit"><img  src="images/Live_Dashboard.jpg" alt="Daily Plan Dashboard" onclick="openModal('myModal2')"/></a>
 									
 									<div id="myModal2" class="modal">
-										<span class="close" onclick="closeModal2()">&times;</span>
+										<span class="close" onclick="closeModal('myModal2')">&times;</span>
 										<img class="modal-content" src="images/Live_Dashboard.jpg">
 									  </div>
 
-									<script>
-										function openModal2() {
-										document.getElementById("myModal2").style.display = "block";
-										}
 
-										function closeModal2() {
-										document.getElementById("myModal2").style.display = "none";
-										}
-									</script>
 
 									<p>This dashboard was created for the purpose of monitoring resource activity in fields.
 										An excel based BI dashboard that fetches its data from an excel sheet, which updates
@@ -234,22 +567,14 @@
 										<h2><a href="#">Financial Penalty dashboard<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img src="images/Financial_Dashboard.png" alt="" onclick="openModal3()"/></a>
+									<a href="#close" class="image fit"><img src="images/Financial_Dashboard.png" alt="" onclick="openModal('myModal3')"/></a>
 									
 									<div id="myModal3" class="modal">
-										<span class="close" onclick="closeModal3()">&times;</span>
+										<span class="close" onclick="closeModal('myModal3')">&times;</span>
 										<img class="modal-content" src="images/Financial_Dashboard.png">
 									  </div>
 
-									<script>
-										function openModal3() {
-										document.getElementById("myModal3").style.display = "block";
-										}
 
-										function closeModal3() {
-										document.getElementById("myModal3").style.display = "none";
-										}
-									</script>
 									
 									<p>It's a Financial Penalty dashboard that I had created using gradient coloring. on customer demand, I have also added a scroller that is basically giving visibility for penalty criteria.</p>
 									<ul class="actions special">
@@ -261,22 +586,14 @@
 										<h2><a href="#">Quality Of Sales Dashboard (Tableau Based)<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img src="images/QOS_Daily.jpg" alt="" onclick="openModal4()"/></a>
+									<a href="#close" class="image fit"><img src="images/QOS_Daily.jpg" alt="" onclick="openModal('myModal4')"/></a>
 									
 									<div id="myModal4" class="modal">
-										<span class="close" onclick="closeModal4()">&times;</span>
+										<span class="close" onclick="closeModal('myModal4')">&times;</span>
 										<img class="modal-content" src="images/QOS_Daily.jpg">
 									  </div>
 
-									<script>
-										function openModal4() {
-										document.getElementById("myModal4").style.display = "block";
-										}
 
-										function closeModal4() {
-										document.getElementById("myModal4").style.display = "none";
-										}
-									</script>
 									
 									<p>This Tableau dashboard was developd to monitor quality of sales for Zong mobile SIMS.</p>
 									<ul class="actions special">
@@ -288,22 +605,14 @@
 										<h2><a href="#">4G Daily Dashboard<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img src="images/4G_Dashboard.jpg" alt="" onclick="openModal5()" /></a>
+									<a href="#close" class="image fit"><img src="images/4G_Dashboard.jpg" alt="" onclick="openModal('myModal5')" /></a>
 									
 									<div id="myModal5" class="modal">
-										<span class="close" onclick="closeModal5()">&times;</span>
+										<span class="close" onclick="closeModal('myModal5')">&times;</span>
 										<img class="modal-content" src="images/4G_Dashboard.jpg">
 									  </div>
 
-									<script>
-										function openModal5() {
-										document.getElementById("myModal5").style.display = "block";
-										}
 
-										function closeModal5() {
-										document.getElementById("myModal5").style.display = "none";
-										}
-									</script>
 									
 									<p>This dashboard is to monitor Zong overal 4G KPIs, like Active base, base movement KPIS, gross adds, reconnections, churns, etc.</p>
 									<ul class="actions special">
@@ -314,22 +623,14 @@
 										<h2><a href="#">Python script to extract Outlook attachment data<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img src="images/PY_Email_Receive.png" alt="" onclick="openModal6()" /></a>
+									<a href="#close" class="image fit"><img src="images/PY_Email_Receive.png" alt="" onclick="openModal('myModal6')" /></a>
 									
 									<div id="myModal6" class="modal">
-										<span class="close" onclick="closeModal6()">&times;</span>
+										<span class="close" onclick="closeModal('myModal6')">&times;</span>
 										<img class="modal-content" src="images/PY_Email_Receive.png">
 									  </div>
 
-									<script>
-										function openModal6() {
-										document.getElementById("myModal6").style.display = "block";
-										}
 
-										function closeModal6() {
-										document.getElementById("myModal6").style.display = "none";
-										}
-									</script>
 									
 									<p>It's a python based project that extracts data from the attachments of emails that we receive on daily bases.
 										After data extraction it gets saved in a local folder and then it is serves as a data source for other BI projects.
@@ -343,22 +644,13 @@
 										<h2><a href="#">Python script to Send automated Outlook Emails<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img src="images/PY_Email.png" alt="" onclick="openModal7()" /></a>
+									<a href="#close" class="image fit"><img src="images/PY_Email.png" alt="" onclick="openModal('myModal7')" /></a>
 									
 									<div id="myModal7" class="modal">
-										<span class="close" onclick="closeModal7()">&times;</span>
+										<span class="close" onclick="closeModal('myModal7')">&times;</span>
 										<img class="modal-content" src="images/PY_Email_Receive.png">
 									  </div>
 
-									<script>
-										function openModal7() {
-										document.getElementById("myModal7").style.display = "block";
-										}
-
-										function closeModal7() {
-										document.getElementById("myModal7").style.display = "none";
-										}
-									</script>
 									
 									<p>Python based project that sends automated emails. This project was developed to mitegate the hassle of sharing 
 										daily kPI progress update with all stakeholders.
@@ -369,58 +661,19 @@
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">Automated Excel dashboard using Excel VBA<br />
-										</a></h2>
-									</header>
-									<a href="#close" class="image fit"><img src="images/Excel_Macros.png" alt="" onclick="openModal8()"/></a>
-									
-									<div id="myModal8" class="modal">
-										<span class="close" onclick="closeModal8()">&times;</span>
-										<img class="modal-content" src="images/Excel_Macros.png">
-									  </div>
-
-									<script>
-										function openModal8() {
-										document.getElementById("myModal8").style.display = "block";
-										}
-
-										function closeModal8() {
-										document.getElementById("myModal8").style.display = "none";
-										}
-									</script>
-									
-									<p>I have developed this excel project using excel VBA. There is one update button available in the first sheet of this excel file. When you click 
-										this update button, first this excel file will gets refresh by updating all it's connection and data sources and then after updating, it will perform 
-										all the operations that are required to update this file.
-									</p>
-									<ul class="actions special">
-										<!-- <li><a href="https://youtu.be/Excel_Macros" class="button">View Project</a></li> -->
-									</ul>
-								</article>
-								<article>
-									<header>
 										<h2><a href="#">Purchase orders Tool<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img src="images/PO_Tool.png" alt="" onclick="openModal9()"/></a>
+									<a href="#close" class="image fit"><img src="images/PO_Tool.png" alt="" onclick="openModal('myModal8')"/></a>
 									
-									<div id="myModal9" class="modal">
-										<span class="close" onclick="closeModal9()">&times;</span>
+									<div id="myModal8" class="modal">
+										<span class="close" onclick="closeModal('myModal8')">&times;</span>
 										<img class="modal-content" src="images/PO_Tool.png">
 									  </div>
 
-									<script>
-										function openModal9() {
-										document.getElementById("myModal9").style.display = "block";
-										}
 
-										function closeModal9() {
-										document.getElementById("myModal9").style.display = "none";
-										}
-									</script>
-									
 									<p>This purchase order tool is a part of the Supply Chain management system. It monitors pruchase orders/Purchase requests
-										of services that Huawei provides to its customers.  
+										of services that Huawei provides to its customers. 
 									</p>
 									<ul class="actions special">
 										<!-- <li><a href="https://youtu.be/Excel_Macros" class="button">View Project</a></li> -->
@@ -431,32 +684,254 @@
 										<h2><a href="#">UIPath Automation WorkFlow<br />
 										</a></h2>
 									</header>
-									<a href="#close" class="image fit"><img src="images/UIPath_Workflows.png" alt="" onclick="openModal10()"/></a>
+									<a href="#close" class="image fit"><img src="images/UIPath_Workflows.png" alt="" onclick="openModal('myModal9')"/></a>
 									
-									<div id="myModal10" class="modal">
-										<span class="close" onclick="closeModal10()">&times;</span>
+									<div id="myModal9" class="modal">
+										<span class="close" onclick="closeModal('myModal9')">&times;</span>
 										<img class="modal-content" src="images/UIPath_Workflows.png">
-									  </div>
+									</div>
 
-									<script>
-										function openModal10() {
-										document.getElementById("myModal10").style.display = "block";
-										}
-
-										function closeModal10() {
-										document.getElementById("myModal10").style.display = "none";
-										}
-									</script>
 									
 									<p>This UIPath RPA was designed for web scraping purpose. It opens a website using chrome web browser and scraps
 										the data from a perticular website using web scraping techniques and then passes this data to a Python script for data transformation  
 										and eventually, data gets saved to an excel file. It uses If/Else conditions, loops, etc. to perform the task. 
 									</p>
-									<ul class="actions special">
-										<!-- <li><a href="https://youtu.be/Excel_Macros" class="button">View Project</a></li> -->
-									</ul>
 								</article>
+								
+								<article>
+									<header>
+										<h2><a href="#">Rio Tinto Budget Dashboard<br />
+										</a></h2>
+									</header>
+									<!-- <div id="myModal9" class="modal"> -->
+									<div class="container1" >
+										<div class="mySlides1">
+										<div class="numbertext">1 / 3</div>
+										  <a href="#close" class="image fit"><img src="images/RTIO Budget Dashboard SS1.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal10')"/></a>
+										</div>
+										
+										
+										<div id="myModal10" class="modal">
+											<span class="close" onclick="closeModal('myModal10')">&times;</span>
+											<img class="modal-content" src="images/RTIO Budget Dashboard SS1.png" style="width:100%; height:50%;">
+										</div>
+									  
+										<div class="mySlides1">
+											<div class="numbertext">2 / 3</div>
+											  <a href="#close" class="image fit"><img src="images/RTIO Budget Dashboard SS2.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal11')"/></a>
+										</div>
+											
+											
+										<div id="myModal11" class="modal">
+											<span class="close" onclick="closeModal('myModal11')">&times;</span>
+											<img class="modal-content" src="images/RTIO Budget Dashboard SS2.png" style="width:100%; height:50%;">
+										</div>
 
+
+										<div class="mySlides1">
+											<div class="numbertext">3 / 3</div>
+												<a href="#close" class="image fit"><img src="images/RTIO Budget Dashboard SS3.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal12')"/></a>
+										</div>
+											
+											
+										<div id="myModal12" class="modal">
+											<span class="close" onclick="closeModal('myModal12')">&times;</span>
+											<img class="modal-content" src="images/RTIO Budget Dashboard SS3.png" style="width:100%; height:50%;">
+										</div>
+
+
+
+`
+										<a class="prev" onclick="plusSlides(-1, 'mySlides1')">❮</a>
+										<a class="next" onclick="plusSlides(1, 'mySlides1')">❯</a>
+										<div class="caption-container"></div>
+									</div>
+									<script>
+										// let slideIndex = 1;
+										showSlides(1, "mySlides1");
+									</script>
+
+									<p>Revolutionize financial planning with our Rio Tinto Budgeting Dashboard—an Excel-based powerhouse featuring advanced VBA scripts, 
+										Power Query, and Power Pivot. Automated, visually captivating, and tailored for Rio Tinto, it ensures precision, efficiency, and 
+										strategic decision-making in a single, user-friendly interface.
+									</p>
+									</article>
+
+
+
+								<article>
+									<header>
+										<h2><a href="#">Rio Tinto Unrecovered Tool Management (Excel VBA)<br />
+										</a></h2>
+									</header>
+									<div class="container1" >
+										<div class="mySlides2">
+										<div class="numbertext">1 / 3</div>
+										<a href="#close" class="image fit"><img src="images/RTIO Non Returned Tool SS1.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal13')"/></a>
+										</div>
+										
+										
+										<div id="myModal13" class="modal">
+											<span class="close" onclick="closeModal('myModal13')">&times;</span>
+											<img class="modal-content" src="images/RTIO Non Returned Tool SS1.png" style="width:100%; height:50%;">
+										</div>
+									
+										<div class="mySlides2">
+											<div class="numbertext">2 / 3</div>
+											<a href="#close" class="image fit"><img src="images/RTIO Non Returned Tool SS2.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal14')"/></a>
+										</div>
+											
+											
+										<div id="myModal14" class="modal">
+											<span class="close" onclick="closeModal('myModal14')">&times;</span>
+											<img class="modal-content" src="images/RTIO Non Returned Tool SS2.png" style="width:100%; height:50%;">
+										</div>
+
+
+									`
+										<a class="prev" onclick="plusSlides(-1, 'mySlides2')">❮</a>
+										<a class="next" onclick="plusSlides(1, 'mySlides2')">❯</a>
+										<div class="caption-container"></div>
+									</div>
+									<script>
+										// let slideIndex = 1;
+										showSlides(1, "mySlides2");
+									</script>
+									<!-- </div> -->
+									<!-- <a href="#close" class="image fit"><img src="images/RTIO Budget Dashboard SS1.png" alt="" onclick="openModal10()"/></a> -->
+
+									<p>Efficiently manage tools with my Excel VBA solution designed for <b>Rio Tinto</b>. This tool, tailored for the mining industry, tracks pending or 
+										unrecovered tools, ensuring accountability. Utilizing advanced VBA techniques, it offers real-time insights and financial monitoring to optimize 
+										operational efficiency for Rio Tinto's dynamic needs.</p>
+									<ul class="actions special">
+										<li><a href="https://youtu.be/ZKssEBW7ROM" class="button">View Project</a></li>
+									</ul>
+									</article>
+									
+
+
+									<article>
+										<header>
+											<h2><a href="#">Rio Tinto Notification Tracker (Excel VBA)<br />
+											</a></h2>
+										</header>
+										<div class="container1" >
+											<div class="mySlides3">
+											<div class="numbertext">1 / 2</div>
+											<a href="#close" class="image fit"><img src="images/Notification Tracker SS2.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal15')"/></a>
+											</div>
+											
+											
+											<div id="myModal15" class="modal">
+												<span class="close" onclick="closeModal('myModal15')">&times;</span>
+												<img class="modal-content" src="images/Notification Tracker SS2.png" style="width:100%; height:50%;">
+											</div>
+										
+											<div class="mySlides3">
+												<div class="numbertext">2 / 2</div>
+												<a href="#close" class="image fit"><img src="images/Notification Tracker SS1.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal16')"/></a>
+											</div>
+												
+												
+											<div id="myModal16" class="modal">
+												<span class="close" onclick="closeModal('myModal16')">&times;</span>
+												<img class="modal-content" src="images/Notification Tracker SS1.png" style="width:100%; height:50%;">
+											</div>
+	
+	
+										`
+											<a class="prev" onclick="plusSlides(-1, 'mySlides3')">❮</a>
+											<a class="next" onclick="plusSlides(1, 'mySlides3')">❯</a>
+											<div class="caption-container"></div>
+										</div>
+										<script>
+											// let slideIndex = 1;
+											showSlides(1, "mySlides3");
+										</script>
+										<!-- </div> -->
+										<!-- <a href="#close" class="image fit"><img src="images/RTIO Budget Dashboard SS1.png" alt="" onclick="openModal10()"/></a> -->
+	
+										<p>Optimize communication with the Excel VBA Notification Tracker tool designed exclusively for <b>Rio Tinto</b>. Leveraging advanced VBA techniques, 
+											this tool incorporates user-friendly forms to efficiently gather information from users. Streamline the tracking of notifications, ensuring 
+											swift and accurate data collection. Elevate your communication workflow with this tailored solution, enhancing responsiveness and data 
+											accuracy for Rio Tinto's dynamic operations.</p>
+										<ul class="actions special">
+											<li><a href="https://youtu.be/u-OUOEesVIU" class="button">View Project</a></li>
+										</ul>
+									</article>
+
+								
+
+
+									<article>
+										<header>
+											<h2><a href="#">Fortescue Electricity Nomination Dashboard (Power BI)<br />
+											</a></h2>
+										</header>
+										<div class="container1" >
+											<div class="mySlides4">
+											<div class="numbertext">1 / 2</div>
+											<a href="#close" class="image fit"><img src="images/Electricity Nomination1.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal17')"/></a>
+											</div>
+											
+											
+											<div id="myModal17" class="modal">
+												<span class="close" onclick="closeModal('myModal17')">&times;</span>
+												<img class="modal-content" src="images/Electricity Nomination1.png" style="width:100%; height:50%;">
+											</div>
+										
+											<div class="mySlides4">
+												<div class="numbertext">2 / 2</div>
+												<a href="#close" class="image fit"><img src="images/Electricity Nomination2.png" style="width:100%; height:100%;" alt="" onclick="openModal('myModal18')"/></a>
+											</div>
+												
+												
+											<div id="myModal18" class="modal">
+												<span class="close" onclick="closeModal('myModal18')">&times;</span>
+												<img class="modal-content" src="images/Electricity Nomination2.png" style="width:100%; height:50%;">
+											</div>
+	
+	
+										`
+											<a class="prev" onclick="plusSlides(-1, 'mySlides4')">❮</a>
+											<a class="next" onclick="plusSlides(1, 'mySlides4')">❯</a>
+											<div class="caption-container"></div>
+										</div>
+										<script>
+											// let slideIndex = 1;
+											showSlides(1, "mySlides4");
+										</script>
+
+	
+										<p>Transformed energy management with a dynamic Electricity Dashboard for Fortescue Metal Group. Harnessing the power of Power BI, 
+											seamlessly integrated with Power Apps and Power Automate, this tool provides real-time insights into electricity demand across 
+											<b>Fortescue Metal Group </b>sites. Elevate your energy strategy with unparalleled efficiency and precision in decision-making.
+											<ul class="actions special">
+												<li><a href="https://youtu.be/jdRs2HlaOj8" class="button">View Project</a></li>
+											</ul>
+									</article>
+
+
+
+									<article>
+										<header>
+											<h2><a href="#">Powerful Power Automate Integration<br />
+											</a></h2>
+										</header>
+										<a href="#close" class="image fit"><img src="images/Power Automate Workflow.png" alt="" onclick="openModal('myModal19')"/></a>
+										
+										<div id="myModal19" class="modal">
+											<span class="close" onclick="closeModal('myModal19')">&times;</span>
+											<img class="modal-content" src="images/Power Automate Workflow.png">
+										</div>
+	
+										
+										<p>Unlock automation potential with my expertise in designing numerous Power Automate workflows. Seamlessly integrated with Power BI, 
+											these workflows provide dynamic data inputs, enhancing insights and decision-making. Additionally, independent flows automate daily 
+											recurring tasks, streamlining operations for unparalleled efficiency. Elevate your workflow automation strategy with precision and productivity.
+										</p>
+
+									</article>
 							</section>
 
 						<!-- Footer -->
@@ -503,7 +978,7 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>Melbourne VIC<br /></p>
+								<p>Perth WA<br /></p>
 							</section>
 							<section>
 								<h3>Phone</h3>
