@@ -18,9 +18,7 @@
 		<style>
 			body {font-family: Arial, Helvetica, sans-serif;}
 			
-			header.major {
-				font-style: normal;
-}
+
 
 			#myImg {
 			  border-radius: 5px;
@@ -305,6 +303,28 @@
 			@media only screen and (max-width: 300px) {
 			.text {font-size: 11px}
 			}
+
+
+			.introImg {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 100vh
+				font-family: 'poppins', sans-serif
+			}
+
+			.introText {
+			font-size: 20px;
+			padding-left: 250px;
+			}
+			
+
+			.page-break {
+                border-top: 1px dotted #b2b2b2;
+                text-align: center;
+                margin: 50px 0;
+            }
+
 			</style>
 
 	</head>
@@ -348,20 +368,28 @@
 					<!-- Featured Post -->
 						<article class="post featured">
 							<header class="major" >
-								<h2><a href="#">About Me <i class="fas fa-user icon-small"></i></a></h2>
-								<p>I am Usman, a professional data analyst passionate about working with organizations that want to make effective use of their data, from the first 
+								<div class="introImg">
+									<div class="image">
+									  <img src="images/profile-pic1.png" style="max-width: 250%; max-height:250%;">
+									</div>
+								
+								<div class="introText">
+								<h2 h2 style="font-size: 24px; text-align: left; border-bottom: solid 5px #e1e1e1; padding-bottom: 8px; margin-bottom: 8px;"><a href="#">About Me <i class="fas fa-user icon-small"></i></a></h2>
+								<p>I am a data analyst, passionate about working with organizations that want to make effective use of their data, from the first 
 									ideas around what you want to measure and how to capture data accurately, through data preparation, analysis and management, all the way to
 									the impactful presentation of insights. I can support each step of the process to enable your organization to make evidence-driven decisions
 									or share insights with new audiences. <br />
 									
 									With nearly 5 years in data analytics, I'm a Microsoft Certified Power BI Data Analyst adept in BI analysis, Tableau, Python, Power Automate, 
-									Power Apps, UI Path RPA, SQL, Snowflake, Excel VBA, and more. <br />
+									Power Apps, UI Path RPA, SQL, Snowflake, Excel VBA, and many more. <br />
 
 									Having collaborated with esteemed multinational companies such as <b>Huawei, Zong 4G Pakistan, Fortescue Metal Group, Rio Tinto, Roy Hill, and 
 									Enco Group</b>, I bring a wealth of experience. Beyond analytics, my passion extends to steering Digital Transformation initiatives, contributing 
 									to organizational growth and innovation.
 								</p>
+								</div>
 							</header>
+							<hr>
 							<div class="slideshow-container">
 
 								<div class="mySlides fade">
@@ -540,6 +568,7 @@
 										<li><a href="https://youtu.be/613IYQSNIKs" class="button">View Project</a></li>
 									</ul>
 								</article>
+
 								<article>
 									<header>
 										<h2><a href="#">Daily Plan Dashboard<br />
@@ -562,6 +591,7 @@
 										<li><a href="https://youtu.be/Cjuyb_F3HbA" class="button">View Project</a></li>
 									</ul>
 								</article>
+
 								<article>
 									<header>
 										<h2><a href="#">Financial Penalty dashboard<br />
@@ -573,14 +603,12 @@
 										<span class="close" onclick="closeModal('myModal3')">&times;</span>
 										<img class="modal-content" src="images/Financial_Dashboard.png">
 									  </div>
-
-
-									
 									<p>It's a Financial Penalty dashboard that I had created using gradient coloring. on customer demand, I have also added a scroller that is basically giving visibility for penalty criteria.</p>
 									<ul class="actions special">
 										<li><a href="https://youtu.be/cl2nQHYYBDc" class="button">View Project</a></li>
 									</ul>
 								</article>
+
 								<article>
 									<header>
 										<h2><a href="#">Quality Of Sales Dashboard (Tableau Based)<br />
@@ -618,47 +646,8 @@
 									<ul class="actions special">
 									</ul>
 								</article>
-								<article>
-									<header>
-										<h2><a href="#">Python script to extract Outlook attachment data<br />
-										</a></h2>
-									</header>
-									<a href="#close" class="image fit"><img src="images/PY_Email_Receive.png" alt="" onclick="openModal('myModal6')" /></a>
-									
-									<div id="myModal6" class="modal">
-										<span class="close" onclick="closeModal('myModal6')">&times;</span>
-										<img class="modal-content" src="images/PY_Email_Receive.png">
-									  </div>
 
 
-									
-									<p>It's a python based project that extracts data from the attachments of emails that we receive on daily bases.
-										After data extraction it gets saved in a local folder and then it is serves as a data source for other BI projects.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://youtu.be/l6_9nDyXaRM" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Python script to Send automated Outlook Emails<br />
-										</a></h2>
-									</header>
-									<a href="#close" class="image fit"><img src="images/PY_Email.png" alt="" onclick="openModal('myModal7')" /></a>
-									
-									<div id="myModal7" class="modal">
-										<span class="close" onclick="closeModal('myModal7')">&times;</span>
-										<img class="modal-content" src="images/PY_Email_Receive.png">
-									  </div>
-
-									
-									<p>Python based project that sends automated emails. This project was developed to mitegate the hassle of sharing 
-										daily kPI progress update with all stakeholders.
-									</p>
-									<ul class="actions special">
-										<li><a href="https://youtu.be/CYplxiReD60" class="button">View Project</a></li>
-									</ul>
-								</article>
 								<article>
 									<header>
 										<h2><a href="#">Purchase orders Tool<br />
@@ -679,24 +668,8 @@
 										<!-- <li><a href="https://youtu.be/Excel_Macros" class="button">View Project</a></li> -->
 									</ul>
 								</article>
-								<article>
-									<header>
-										<h2><a href="#">UIPath Automation WorkFlow<br />
-										</a></h2>
-									</header>
-									<a href="#close" class="image fit"><img src="images/UIPath_Workflows.png" alt="" onclick="openModal('myModal9')"/></a>
-									
-									<div id="myModal9" class="modal">
-										<span class="close" onclick="closeModal('myModal9')">&times;</span>
-										<img class="modal-content" src="images/UIPath_Workflows.png">
-									</div>
 
-									
-									<p>This UIPath RPA was designed for web scraping purpose. It opens a website using chrome web browser and scraps
-										the data from a perticular website using web scraping techniques and then passes this data to a Python script for data transformation  
-										and eventually, data gets saved to an excel file. It uses If/Else conditions, loops, etc. to perform the task. 
-									</p>
-								</article>
+
 								
 								<article>
 									<header>
@@ -839,7 +812,7 @@
 											</div>
 	
 	
-										`
+
 											<a class="prev" onclick="plusSlides(-1, 'mySlides3')">❮</a>
 											<a class="next" onclick="plusSlides(1, 'mySlides3')">❯</a>
 											<div class="caption-container"></div>
@@ -915,6 +888,25 @@
 
 									<article>
 										<header>
+											<h2><a href="#">UIPath Automation WorkFlow<br />
+											</a></h2>
+										</header>
+										<a href="#close" class="image fit"><img src="images/UIPath_Workflows.png" alt="" onclick="openModal('myModal9')"/></a>
+										
+										<div id="myModal9" class="modal">
+											<span class="close" onclick="closeModal('myModal9')">&times;</span>
+											<img class="modal-content" src="images/UIPath_Workflows.png">
+										</div>
+	
+										
+										<p>This UIPath RPA was designed for web scraping purpose. It opens a website using chrome web browser and scraps
+											the data from a perticular website using web scraping techniques and then passes this data to a Python script for data transformation  
+											and eventually, data gets saved to an excel file. It uses If/Else conditions, loops, etc. to perform the task. 
+										</p>
+									</article>									
+
+									<article>
+										<header>
 											<h2><a href="#">Powerful Power Automate Integration<br />
 											</a></h2>
 										</header>
@@ -932,6 +924,56 @@
 										</p>
 
 									</article>
+
+
+
+
+									<article>
+										<header>
+											<h2><a href="#">Python script to extract Outlook attachment data<br />
+											</a></h2>
+										</header>
+										<a href="#close" class="image fit"><img src="images/PY_Email_Receive.png" alt="" onclick="openModal('myModal6')" /></a>
+										
+										<div id="myModal6" class="modal">
+											<span class="close" onclick="closeModal('myModal6')">&times;</span>
+											<img class="modal-content" src="images/PY_Email_Receive.png">
+										  </div>
+	
+	
+										
+										<p>It's a python based project that extracts data from the attachments of emails that we receive on daily bases.
+											After data extraction it gets saved in a local folder and then it is serves as a data source for other BI projects.
+										</p>
+										<ul class="actions special">
+											<li><a href="https://youtu.be/l6_9nDyXaRM" class="button">View Project</a></li>
+										</ul>
+									</article>
+	
+									
+									<article>
+										<header>
+											<h2><a href="#">Python script to Send automated Outlook Emails<br />
+											</a></h2>
+										</header>
+										<a href="#close" class="image fit"><img src="images/PY_Email.png" alt="" onclick="openModal('myModal7')" /></a>
+										
+										<div id="myModal7" class="modal">
+											<span class="close" onclick="closeModal('myModal7')">&times;</span>
+											<img class="modal-content" src="images/PY_Email_Receive.png">
+										  </div>
+	
+										
+										<p>Python based project that sends automated emails. This project was developed to mitegate the hassle of sharing 
+											daily kPI progress update with all stakeholders.
+										</p>
+										<ul class="actions special">
+											<li><a href="https://youtu.be/CYplxiReD60" class="button">View Project</a></li>
+										</ul>
+									</article>
+	
+
+
 							</section>
 
 						<!-- Footer -->
